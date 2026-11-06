@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criss Butique | Moda Feminina</title>
+    
+    <!-- Fontes e Ícones -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logotipo">
+                <!-- Substitua o texto pela tag <img> quando tiver a logo -->
+                <a href="#"><h1>CRISS BUTIQUE</h1></a>
+            </div>
+
+            <ul class="menu-principal">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Biquíni</a></li>
+                <li><a href="#">Body</a></li>
+                <li><a href="#">Calça Jeans</a></li>
+                <li><a href="#">T-Shirt</a></li>
+                <li><a href="#">Vestidos</a></li>
+            </ul>
+
+            <div class="redes-sociais-icones">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" class="sacola" aria-label="Sacola de Compras">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="contador-sacola">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sec-principal">
+            <div class="carrossel-container">
+                <!-- Slide 1 (Biquínis) -->
+                <div class="slide ativo">
+                    <img src="https://static.vecteezy.com/ti/fotos-gratis/p1/20721857-bronzeado-dentro-uma-tropical-de-praia-foto.jpg">
+                    <div class="conteudo-banner">
+                        <h2>Coleção Moda Praia</h2>
+                        <p>Encontre o biquíni perfeito para o seu verão</p>
+                        <a href="#" class="btn-comprar">Comprar Agora</a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 (Bodies) -->
+                <div class="slide">
+                    <img src="https://images.tcdn.com.br/img/img_prod/1339896/body_com_gola_bianca_1_20250910153153_fe769034c95c.jpeg" alt="Coleção de Bodies">
+                    <div class="conteudo-banner">
+                        <h2>Bodies Exclusivos</h2>
+                        <p>Do casual ao elegante com nossas novas peças</p>
+                        <a href="#" class="btn-comprar">Ver Coleção</a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 (Promoções) -->
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?q=80&w=2070&auto=format&fit=crop" alt="Promoções">
+                    <div class="conteudo-banner">
+                        <h2>Sale Imperdível</h2>
+                        <p>Até 50% OFF em peças selecionadas</p>
+                        <a href="#" class="btn-comprar">Ver Promoções</a>
+                    </div>
+                </div>
+
+                <!-- Controles do Carrossel -->
+                <button class="btn-carrossel prev" id="btn-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="btn-carrossel next" id="btn-next"><i class="fa-solid fa-chevron-right"></i></button>
+
+                <!-- Indicadores -->
+                <div class="indicadores">
+                    <span class="dot ativo" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SEÇÃO BIQUÍNIS -->
+        <section class="sec-produtos biquini-cards">
+            <div class="cabecalho-secao">
+                <h2>Coleção Moda Praia</h2>
+                <a href="#" class="ver-todos">Ver todos</a>
+            </div>
+            
+            <div class="carrossel-produtos-container">
+                <div class="lista-produtos" id="lista-biquinis">
+                    
+                    <!-- Card Produto 1 -->
+                    <div class="card-produto">
+                        <div class="imagem-produto">
+                            <span class="badge novo">Novo</span>
+                            <img src="https://cdn.vnda.com.br/leberti/2024/05/24/11_46_26_750_biquini-cortininha-laser-preto-aruba-i4p7ne-002-large.jpg?v=1716561986" alt="Conjunto Biquíni Cortininha">
+                            <div class="acoes-produto">
+                                <button class="btn-add-sacola"><i class="fa-solid fa-cart-plus"></i> Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="info-produto">
+                            <h3 class="titulo-produto">Conjunto Biquíni Cortininha Preto</h3>
+                            <div class="preco-produto">
+                                <span class="preco-atual">R$ 129,90</span>
+                            </div>
+                            <span class="parcelamento">ou 3x de R$ 43,30</span>
+                            <div class="tamanhos">
+                                <span>P</span>
+                                <span>M</span>
+                                <span>G</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Produto 2 -->
+                    <div class="card-produto">
+                        <div class="imagem-produto">
+                            <img src="https://assets.sistemawbuy.com.br/arquivos/4e4669e5922273721b564e2183d9f822/produtos/68378bb994c43/calcinha-de-biquini-sunkine-cintura-alta-preto-aguadesal-1-695ebe01d692a.jpg" alt="Biquíni Cintura Alta">
+                            <div class="acoes-produto">
+                                <button class="btn-add-sacola"><i class="fa-solid fa-cart-plus"></i> Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="info-produto">
+                            <h3 class="titulo-produto">Conjunto Biquíni Hot Pants Floral</h3>
+                            <div class="preco-produto">
+                                <span class="preco-atual">R$ 149,90</span>
+                            </div>
+                            <span class="parcelamento">ou 3x de R$ 49,96</span>
+                            <div class="tamanhos">
+                                <span>M</span>
+                                <span>G</span>
+                                <span>GG</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Produto 3 -->
+                    <div class="card-produto">
+                        <div class="imagem-produto">
+                            <span class="badge promocao">-20%</span>
+                            <img src="https://images.tcdn.com.br/img/img_prod/815911/biquni_fio_dental_asa_delta_bac_1_rosa_canelado_1_20260217080549_54d36fab6bb9.jpg" alt="Biquíni Asa Delta">
+                            <div class="acoes-produto">
+                                <button class="btn-add-sacola"><i class="fa-solid fa-cart-plus"></i> Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="info-produto">
+                            <h3 class="titulo-produto">Conjunto Asa Delta Canelado</h3>
+                            <div class="preco-produto">
+                                <span class="preco-atual">R$ 99,90</span>
+                            </div>
+                            <span class="parcelamento">ou 2x de R$ 49,95</span>
+                            <div class="tamanhos">
+                                <span>P</span>
+                                <span>M</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Produto 4 -->
+                    <div class="card-produto">
+                        <div class="imagem-produto">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQSxhb8NrZq5DxIWzQqqOEiaA4lJfBk1Bt1DSEJsPz4g&s=10" alt="Biquíni Tomara que Caia">
+                            <div class="acoes-produto">
+                                <button class="btn-add-sacola"><i class="fa-solid fa-cart-plus"></i> Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="info-produto">
+                            <h3 class="titulo-produto">Conjunto Tomara que Caia Textura</h3>
+                            <div class="preco-produto">
+                                <span class="preco-atual">R$ 139,90</span>
+                            </div>
+                            <span class="parcelamento">ou 3x de R$ 46,63</span>
+                            <div class="tamanhos">
+                                <span>P</span>
+                                <span>M</span>
+                                <span>G</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Seta de navegação -->
+                <button class="seta-nav direita" id="seta-dir-biquinis" aria-label="Ver mais opções">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- SEÇÃO BODIES -->
+        <section class="sec-produtos sec-body">
+            <div class="cabecalho-secao">
+                <h2>Coleção de Bodies</h2>
+                <a href="#" class="ver-todos">Ver todos</a>
+            </div>
+            
+            <div class="carrossel-produtos-container">
+                <div class="lista-produtos" id="lista-bodies">
+                    
+                    <!-- Card Body 1 -->
+                    <div class="card-produto">
+                        <div class="imagem-produto">
+                            <span class="badge novo">Novo</span>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO-xSwDOXxV9aUXLh3frHE87VmJeFjuO29Fwf_zaFVew&s" alt="Body Renda Decote V">
+                            <div class="acoes-produto">
+                                <button class="btn-add-sacola"><i class="fa-solid fa-cart-plus"></i> Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="info-produto">
+                            <h3 class="titulo-produto">Body de Renda Decote V Preto</h3>
+                            <div class="preco-produto">
+                                <span class="preco-atual">R$ 119,90</span>
+                            </div>
+                            <span class="parcelamento">ou 3x de R$ 39,96</span>
+                            <div class="tamanhos">
+                                <span>P</span>
+                                <span>M</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Body 2 -->
+                    <div class="card-produto">
+                        <div class="imagem-produto">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM_arTPLm8wxmhr97ii9uBM9s9cu7jvgLdRFhjyxjALQ&s" alt="Body Canelado Gola Alta">
+                            <div class="acoes-produto">
+                                <button class="btn-add-sacola"><i class="fa-solid fa-cart-plus"></i> Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="info-produto">
+                            <h3 class="titulo-produto">Body Canelado Gola Alta Bege</h3>
+                            <div class="preco-produto">
+                                <span class="preco-atual">R$ 89,90</span>
+                            </div>
+                            <span class="parcelamento">ou 2x de R$ 44,95</span>
+                            <div class="tamanhos">
+                                <span>P</span>
+                                <span>M</span>
+                                <span>G</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Body 3 -->
+                    <div class="card-produto">
+                        <div class="imagem-produto">
+                            <span class="badge promocao">-15%</span>
+                            <img src="https://acdn-us.mitiendanube.com/stores/006/721/016/products/body-manga-longa-tule-fantasia-carnaval-rio-19-1f03ade3091b3f96eb17686640858912-1024-1024.webp" alt="Body Manga Longa Tule">
+                            <div class="acoes-produto">
+                                <button class="btn-add-sacola"><i class="fa-solid fa-cart-plus"></i> Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="info-produto">
+                            <h3 class="titulo-produto">Body Manga Longa em Tule</h3>
+                            <div class="preco-produto">
+                                <span class="preco-atual">R$ 139,90</span>
+                            </div>
+                            <span class="parcelamento">ou 3x de R$ 46,63</span>
+                            <div class="tamanhos">
+                                <span>M</span>
+                                <span>G</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Body 4 -->
+                    <div class="card-produto">
+                        <div class="imagem-produto">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwwOIl5h5rBW-Isf0_RTLPshzhSP9ciGq4lbv5Y0jqNg&s" alt="Body Assimetrico">
+                            <div class="acoes-produto">
+                                <button class="btn-add-sacola"><i class="fa-solid fa-cart-plus"></i> Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="info-produto">
+                            <h3 class="titulo-produto">Body Assimétrico Um Ombro Só</h3>
+                            <div class="preco-produto">
+                                <span class="preco-atual">R$ 109,90</span>
+                            </div>
+                            <span class="parcelamento">ou 3x de R$ 36,63</span>
+                            <div class="tamanhos">
+                                <span>P</span>
+                                <span>M</span>
+                                <span>G</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!-- Seta de navegação exclusiva para Bodies -->
+                <button class="seta-nav direita" id="seta-dir-bodies" aria-label="Ver mais opções">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
